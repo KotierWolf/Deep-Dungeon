@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="ca6bf91b-7785-4544-9bf2-669b64fdcc5a" Name="Palace of the Dead" Enabled="true">
+  <ExportedFolder Id="ca6bf91b-7785-4544-9bf2-669b64fdcc5a" Name="{Deep Dungeon}" Enabled="true">
     <Folders>
       <Folder Id="02fa0e2d-53f7-47de-85de-d982c0000f23" Name="Enemies" Enabled="true">
         <Folders>
@@ -11,11 +11,40 @@
                 <Actions>
                   <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" PlaySpeechMyself="True" UseTTSTextExpression="Get behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Eyeshine" Id="2dbfcc12-eb74-4a00-8324-966108e03551" RegularExpression="14:2FE5:">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" PlaySpeechMyself="True" UseTTSTextExpression="Loow Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="cce26b81-1bb8-4f1d-a611-e2c60ad6b6b4" Name="Heavenly Gozu" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="128-Tonze Swing" Id="e656f74d-6989-4002-9e5c-5340a6fb00d5" RegularExpression="14:3003:">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Move Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="32-Tonze Swipe" Id="9852cb41-454d-4939-911d-7a29bbdd8eb8" RegularExpression="14:3005:">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Get Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
               </Trigger>
             </Triggers>
           </Folder>
@@ -125,22 +154,6 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="128-Tonze Swing" Id="e656f74d-6989-4002-9e5c-5340a6fb00d5" RegularExpression="14:3003:">
-            <Actions>
-              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Move Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="32-Tonze Swipe" Id="9852cb41-454d-4939-911d-7a29bbdd8eb8" RegularExpression="14:3005:">
-            <Actions>
-              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Get Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
           <Trigger Enabled="true" Name="Level 5 Petrify" Id="fdec270b-1377-4503-bb1b-e46ac4ec2874" RegularExpression="14:1B77:">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="Avoid Petrify" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -153,11 +166,9 @@
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" PlaySpeechMyself="True" UseTTSTextExpression="Get Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -202,6 +213,21 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Otter" Id="5c595a78-012c-4a0d-88eb-e0cb05e314fe" RegularExpression="">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Toad" Id="84e3b5d7-7bf1-416b-a489-3819f05400f5" RegularExpression="Trap:1887:">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Toad" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -395,31 +421,25 @@
                 <Actions>
                   <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Tank Cleave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="Words of Woe" Id="7555110b-2698-400f-a73d-c7613fdfd001" RegularExpression="14:2E90:">
                 <Actions>
                   <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Get Behind" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="Eye of Fire" Id="31d7bd3b-15f8-427c-8cff-5a57ac841426" RegularExpression="14:2E92:">
                 <Actions>
                   <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Look Away" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
